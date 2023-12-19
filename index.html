@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Super To-Do List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Super To-Do List</h1>
+        <div id="app">
+            <div id="lists-container">
+                <div id="todo-list" class="task-list" data-list-id="todo">
+                    <h2>To-Do</h2>
+                    <ul></ul>
+                </div>
+                <div id="work-list" class="task-list" data-list-id="work">
+                    <h2>Work</h2>
+                    <ul></ul>
+                </div>
+            </div>
+            <div id="input-container">
+                <input type="text" id="task-input" placeholder="Add a new task">
+                <select id="list-selector">
+                    <option value="todo">To-Do</option>
+                    <option value="work">Work</option>
+                </select>
+                <button onclick="addTask()">Add Task</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

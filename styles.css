@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3498db; /* Set to a nice blue color */
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+#app {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #fff;
+}
+
+.task-list {
+    background-color: #000;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none; /* Remove default list-style-type */
+}
+
+.task-list li {
+    margin-bottom: 5px; /* Adjust the margin between tasks */
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.task-name {
+    color: #EE82EE; /* Violet color for task name */
+}
+
+.task-date {
+    color: #FFD700; /* Gold color for time */
+}
+
+#task-input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #4caf50;
+    border-radius: 4px;
+    outline: none;
+}
+
+#task-input:focus {
+    border-color: #45a049;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    display: none; /* Hide the default checkbox */
+}
+
+/* Custom star bullet point */
+.task-list li::before {
+    content: '\2605'; /* Unicode character for a star */
+    color: #FFA500; /* Orange color for the star */
+    margin-right: 5px;
+}
